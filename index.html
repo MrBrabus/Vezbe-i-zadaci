@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>IT Prekvalifikacija</title>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Baskervville&display=swap" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    
+
+      
+
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" id="vrh">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="it-prekvalifikacija.png" width="45" height="45" alt="">
+            </a>
+
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#if-naredba">if naredba <span class="sr-only">(current)</span></a>
+            </li>
+
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+             <a class="nav-link" href="#&&_operator">Operator && <span class="sr-only">(current)</span></a>
+            </li>
+
+         <ul class="navbar-nav mr-auto">
+           <li class="nav-item">
+            <a class="nav-link" href="#!_operator">Operator ! <span class="sr-only">(current)</span></a>
+             </li>
+
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+            <a class="nav-link" href="#nizovi">Nizovi <span class="sr-only">(current)</span></a>
+            </li>
+
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+            <a class="nav-link" href="#nizovi_index">Nizovi indexiranje <span class="sr-only">(current)</span></a>
+            </li>
+
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+            <a class="nav-link" href="#while_petlja">While petlja <span class="sr-only">(current)</span></a>
+            </li>
+
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+            <a class="nav-link" href="#do_while">Do while petlja <span class="sr-only">(current)</span></a>
+            </li>
+
+         <ul class="navbar-nav mr-auto">
+             <li class="nav-item">
+             <a class="nav-link" href="#for_petlja">For petlja <span class="sr-only">(current)</span></a>
+            </li>
+        </div>
+
+ 
+
+        </div>
+      </nav>
+
+      <div class="jumbotron">
+        <img class="imgs" src="it-prekvalifikacija.png" alt="">
+        <h1 class="display-4">IT Prekvalifikacija</h1>
+        <p class="lead">Vežbe i domaći zadaci iz Javascript-a sa obuke 2019/20</p>
+    </div>
+
+<h3 id="if-naredba">Proveravanje uslova (if naredba): </h3>
+
+<div class="teorija">
+<p class="prvi">
+    U JavaScriptu sintaksa za proveravanje uslova je sledeća:<br><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;if ( uslov) {<br><br>
+    Akcije koje se izvršavaju ukoliko je uslov ispunjen..<br><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;}<br><br><br>
+</p>
+</div>
+
+<div class="primer">
+    <p class="centar">Primer:</p><br>
+    <p class="drugi">let godina = prompt("Koja godine je počeo Prvi svetski rat?");<br><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;if (godina == 1914) {<br><br>
+    alert("Pogodili ste godinu!");<br><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;}</p>
+
+</div>
+
+<h5 class="h5">Vežba</h5>
+
+<div class="tab">
+    <button class="tablinks" onclick="openCity(event, 'Zadatak 1')">Zadatak 1</button>
+    <button class="tablinks" onclick="openCity(event, 'Zadatak 2')">Zadatak 2</button>
+    <button class="tablinks" onclick="openCity(event, 'Zadatak 3')">Zadatak 3</button>
+    <button class="tablinks" onclick="openCity(event, 'Zadatak 4')">Zadatak 4</button>
+  </div>
+
+
+  <div id="Zadatak 1" class="tabcontent zadatak">
+    <h3>Zadatak 1</h3>
+    <p class="centar">Traženje parnog broja</p><br><br>
+    <p class="content">let broj = prompt("Unesite broj");<br><br>
+
+
+    if(broj % 2 == 0){<br><br>
+        
+        &nbsp;&nbsp;&nbsp;&nbsp;alert("Broj je paran");<br><br>
+    
+    } else if(broj % 2 == 1){<br><br>
+        
+        &nbsp;&nbsp;&nbsp;&nbsp;alert("Broj je neparan");<br><br>
+    
+    } else {<br><br>
+        
+        &nbsp;&nbsp;&nbsp;&nbsp;alert("Nece da moze :)");<br><br>
+    }</p><br><br>
+   
+  </div>
+
+  <div id="Zadatak 2" class="tabcontent zadatak">
+
+    <h3>Zadatak 2</h3>
+    <p class="centar">Pitanja i bodovanje tačnih odgovora</p><br><br>
+    <p class="content">let bodovi = 0;<br><br>
+
+        //    Prvo pitanje<br><br>
+        
+        let pitanje1 = prompt("Glavni grad Austrije");<br><br>
+        
+        if(pitanje1 == "Bec"){<br>
+        bodovi = bodovi +3;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;alert("Tacno, osvoili ste 3 boda");<br>
+        }else{<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;alert("Netacno, niste osvoili bodove")<br>
+        } <br><br>
+        
+        //    Drugo pitanje<br><br>
+        
+        let pitanje2 = prompt("Glavni grad Rusije");<br><br>
+        
+        if(pitanje2 == "Moskva"){<br>
+        bodovi = bodovi +3;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;alert("Tacno, osvoili ste 3 boda");<br>
+        }else{<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;alert("Netacno, niste osvoili bodove")<br>
+        } <br><br>
+        
+        //    Trece pitanje<br><br>
+        
+        let pitanje3 = prompt("Glavni grad Nemacke");<br><br>
+        
+        if(pitanje3 == "Berlin"){<br>
+        bodovi = bodovi +3;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;alert("Tacno, osvoili ste 3 boda");<br>
+        }else{<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;alert("Netacno, niste osvoili bodove")<br>
+        } <br><br>
+                
+        //    Cetvrto pitanje<br><br>
+        
+        let pitanje4 = prompt("Glavni grad Francuske");<br><br>
+        
+        if(pitanje4 == "Pariz"){<br>
+        bodovi = bodovi +3;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;alert("Tacno, osvoili ste 3 boda");<br>
+        }else{<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;alert("Netacno, niste osvoili bodove")<br>
+        } <br><br>
+        
+        //    Peto pitanje<br><br>
+        
+        let pitanje5 = prompt("Glavni grad Italije");<br><br>
+        
+        if(pitanje5 == "Rim"){<br>
+        bodovi = bodovi +3;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp; alert("Tacno, osvoili ste 3 boda");<br>
+        }else{<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;alert("Netacno, niste osvoili bodove")<br>
+        } <br><br>
+        
+        &nbsp;&nbsp;&nbsp;&nbsp;alert("Cestitamo, osvoili ste: " + bodovi + " bodova");<br><br>
+        
+        let bodovi1 = bodovi / 3;<br><br>
+        
+        &nbsp;&nbsp;&nbsp;&nbsp;alert("Odgovorili ste tacno na: " + bodovi1 + " pitanja.");</p><br><br>
+
+  </div>
+   
+  <div id="Zadatak 4" class="tabcontent zadatak">
+    <h3>Zadatak 4</h3>
+    <p class="centar">Unos dva broja i traženje većeg</p><br><br>
+    <p class="content">let prviBroj = prompt("Unesite prvi broj: ");<br>
+        let drugiBroj = prompt("Unesite drugi broj: ");<br>
+        let maximum;<br><br>
+        
+        if(prviBroj > drugiBroj) {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp; maximum = prviBroj;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp; alert("Prvi broj: " + maximum + " je veci.")<br><br>
+        
+        }else if(prviBroj < drugiBroj){<br>
+            &nbsp;&nbsp;&nbsp;&nbsp; maximum = drugiBroj;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp; alert("Drugi broj: " + maximum + " je veci od prvog.")<br><br>
+        
+        }else {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;alert("Brojevi su isti")<br>
+        }</p><br><br>
+   
+  </div>
+
+  <div id="Zadatak 3" class="tabcontent zadatak">
+
+    <h3>Zadatak 3</h3>
+    <p class="centar">Traženje parnog broja u jednoj liniji</p><br><br>
+    <p class="content">let broj = prompt("Unesite broj");<br><br>
+        (broj % 2 == 0) ? alert("Broj je paran") : alert("Broj je neparan");</p><br><br>
+
+  </div>
+
+  <h3 id="&&_operator">Logički operator <b>&& (AND)</b></h3>
+
+  <div class="teorija">
+    <p class="prvi">
+        Logički operator <b>&&(AND)</b><br><br>
+" i " logički operator postavlja se između uslova uz pomoć dva && znaka.<br><br>
+Složeni uslov je istinit samo i isključivo u slučaju da su svi uslovi tačni , odnosno da bi uslov bio<br>
+ispunjejn potrebno je da svi uslovi budu true koliko god da ih ima.<br><br>
+    </p>
+    </div>
+    
+    <div class="primer">
+        <p class="centar">Primer:</p><br>
+        <p class="drugi">//Primer kada su oba dela složenog uslova true<br><br>
+            if ( 4 < 5 && 5 < 6) {<br>
+            alert("Uslov je ispunjen!");<br>
+            }</p><br>
+    
+    </div>
+
+    <h5 class="h5">Vežba</h5>
+
+    <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'Zadatak 5')">Zadatak 1</button>
+        <button class="tablinks" onclick="openCity(event, 'Zadatak 6')">Zadatak 2</button>
+      </div>
+    
+    
+      <div id="Zadatak 5" class="tabcontent zadatak">
+        <h3>Zadatak 1</h3>
+        <p class="centar">Otvaranje - Zatvaranje radnje</p><br><br>
+        <p class="content">let datum = new Date();<br>
+            let sat = datum.getHours();<br>
+            let i;<br><br>
+            
+            for(i = 7; i <= sat; i++){<br>
+                <br>
+            };<br><br>
+            
+            
+            
+            (sat < 7 || sat > 15)  ? alert("Radnja je zatvorena, otvara se za: " + i + " sati.") : alert("Radnja je otvorena.");</p><br><br>
+       
+      </div>
+
+      <div id="Zadatak 6" class="tabcontent zadatak">
+        <h3>Zadatak 2</h3>
+        <p class="centar">Napraviti promenljivu korisničkoIme i promenljivu lozinka i dodeliti im neku string vrednost.<br>
+            Pristup je dozvoljen ukoliko je korisničko ime "administrator" i ukoliko je lozinka "enigma".<br>
+            Izvršiti proveru i ispisati "Dobrodošli" ukoliko je pristup dozvoljen ili "Pristup odbijen" ukoliko su<br>
+            uneti netačni podaci.
+            </p><br><br>
+        <p class="content">let korisnickoIme = prompt("Unesite korisnicko ime: ");<br>
+            let lozinka = prompt("Unesite lozinku: ");<br><br>
+            
+            (korisnickoIme == "administrator" && lozinka == "enigma") ? alert("Dobrodošli: " + korisnickoIme) : alert("Pristup odbijen!");</p><br><br>
+       
+      </div>
+    
+      <h3 id="!_operator">Logički operator <b>! NOT</b> </h3>
+
+      <div class="teorija">
+        <p class="prvi">
+            Logički operator <b>! NOT</b><br><br>
+            U uslovima se koristi uz pomoć uzvičnika <b>!</b> koji se stavlja ispred uslova.<br>
+            Ovaj logički operator postavlja vrednost uslova suprotnu od one koja jeste.<br><br>
+             ! true = > false<br>
+            ! false = > true<br>
+            <br><br>
+        </p>
+        </div>
+        
+        <div class="primer">
+            <p class="centar">Primer:</p>
+            <p class="drugi">if (! 3>4){<br>
+                alert("Zbog NOT uslov je ispunjen!")<br>
+                }</p><br>
+                <p class="centar">Primer 2:</p>
+                <p class="drugi">if (! (3>5 && 3>2) {<br>
+                alert("Uslov je ispunjen!")<br>
+                }</p><br>
+        
+        </div>
+      
+        <h5 class="h5">Vežba</h5>
+
+        <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'Zadatak 7')">Zadatak 1</button>
+          </div>
+        
+        
+          <div id="Zadatak 7" class="tabcontent zadatak">
+            <h3>Zadatak 1</h3>
+            <p class="centar">Potrebno je razmisliti i predvideti šta će vratiti sledeći uslovi , true ili false:</p><br><br>
+            <p class="content">(!(5>6 || 6>5))  &nbsp;&nbsp;&nbsp;&nbsp;    -  &nbsp;&nbsp;&nbsp;&nbsp;     false<br>
+                (!(5>6 && 6>5))  &nbsp;&nbsp;&nbsp;&nbsp;    -  &nbsp;&nbsp;&nbsp;&nbsp;     true<br>
+                ( 3>2 || 2>3 || 1>2)  &nbsp;&nbsp;&nbsp;&nbsp;    -  &nbsp;&nbsp;&nbsp;&nbsp;     true<br>
+                (3>2 && 2>3 && 1>2)  &nbsp;&nbsp;&nbsp;&nbsp;    -  &nbsp;&nbsp;&nbsp;&nbsp;     false<br>
+                (!( 3>2 || 2>3 || 1>2))  &nbsp;&nbsp;&nbsp;&nbsp;    -  &nbsp;&nbsp;&nbsp;&nbsp;     true<br>
+                (!(3>2 && 2>3 && 1>2))  &nbsp;&nbsp;&nbsp;&nbsp;    -  &nbsp;&nbsp;&nbsp;&nbsp;     true</p><br><br>
+           
+          </div>
+
+          <h3 id="nizovi">Nizovi </h3>
+
+          <div class="teorija">
+            <p class="prvi">
+                Nizovi<br><br>
+Nizovi predstavljaju strukturu podataka koja nam omogućava da u neku promenljivu sačuvamo
+kolekciju podataka.<br>
+U nizove možemo smeštati brojeve , stringove , objekte ali i druge promenljive.<br>
+Deklarisanje niza vrši se uz pomoć uglastih zagrada.<br>
+                <br><br>
+            </p>
+            </div>
+            
+            <div class="primer">
+                <p class="centar">Primer:</p>
+                <p class="drugi">let programskiJezici = ["Python", "Java", "C++", "C#"];</p><br><br>
+                   <p style="text-align: center; color: black;">U primeru iznad deklarisali smo jedan niz i dodelili smo mu četiri elementa niza.</p><br>
+            
+            </div>
+
+            <h5 class="h5">Vežba</h5>
+
+            <div class="tab">
+                <button class="tablinks" onclick="openCity(event, 'Zadatak 8')">Zadatak 1</button>
+                <button class="tablinks" onclick="openCity(event, 'Zadatak 9')">Zadatak 2</button>
+              </div>
+            
+            
+              <div id="Zadatak 8" class="tabcontent zadatak">
+                <h3>Zadatak 1</h3>
+                <p class="centar">Napraviti tri niza od kojih prvi treba da sadrži kolekciju stringova , drugi kolekciju brojeva dok<br>
+                    treći treba da sadrži kolekciju promenljivih.</p><br><br>
+                <p class="content">let brojevi = [1,3,5,7,9,12,15,23];<br>
+                    let stringovi = ["Ivan", "Milan", "Jovana", "Dragana", "Srefan"];<br>
+                    let promenljive = [brojevi,stringovi];<br>
+                    let sveee = [brojevi, "Milovan", 45];<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;document.write("Ukupno brojeva u ovom nizu: " + sveee.length);</p><br><br>
+               
+              </div>
+
+              <div id="Zadatak 9" class="tabcontent zadatak">
+                <h3>Zadatak 2</h3>
+                <p class="centar">Brojanje elemenate niza i dodela zvanja u zavisnosti od dužine niza</p><br><br>
+                <p class="content">let niz = [1,3,5,7,9,24,254,2652,245,245,59,976,679,456,346,457,579679,67,3637,7234,536,7653456,346,35476568,467234,432536,56,9756,34,5346,];<br><br>
+
+                    if(niz.length < 10){<br>
+                        alert("Niz je mali i ima: " + niz.length + " elemenata");<br><br>
+                    
+                    } else if(niz.length > 10 && niz.length < 20){<br>
+                        alert("Niz je srednji i ima: " + niz.length + " elemenata")<br><br>
+                    
+                    } else {<br>
+                        alert("Niz je veliki i ima: " + niz.length + " elemenata")<br>
+                    }<br><br></p><br><br>
+               
+              </div>
+
+              <h3 id="nizovi_index">Nizovi indexiranje</h3>
+
+              <div class="teorija">
+                <p class="prvi">let programskiJezici = ["Python", "Java", "C++", "C#"];<br><br>
+                    Pristupanje elementima niza:<br><br>
+Brojanje ili indeksiranje elemenata niza kreće od nule. Što bi značilo da je naš nulti element niza
+"Python".<br>
+Svakom elementu niza možemo pristupiti preko njegovog indeksa.<br>
+</p>
+                </div>
+                
+                <div class="primer">
+                    <p class="centar">Primer:</p>
+                    <p class="drugi">let programskiJezici = ["Python", "Java", "C++", "C#"];<br>alert(programskiJezici[0]);<br>//ispisaće "Python"</p><br>
+                    <p class="centar">Primer:</p>
+                    <p class="drugi">let programskiJezici = ["Python", "Java", "C++", "C#"];<br>alert(programskiJezici[2]);<br>//ispisaće "C++"</p><br>
+                
+                </div>
+
+                <h3 id="while_petlja" style="padding-top: 20%;">While petlja </h3>
+
+                <div class="teorija">
+                    <p class="prvi">
+                        U programiranju često imamo potrebu da neku akciju ili deo koda ponavljamo više puta.<br>
+While petlja nam omogućava da ponavljamo određene akcije sve dok je neki uslov ispunjen , bez njihovog ponovnog pisanja.<br><br>
+Sintaksa while petlje :<br><br>
+while ( uslov) {<br>
+blok koda koji se izvršava ukoliko je uslov true<br>
+}<br>
+</p>
+                    </div>
+                    
+                    <div class="primer">
+                        <p class="centar">Primer:</p>
+                        <p class="drugi">let i = 2;<br>
+                            while ( i>0) {<br>
+                            console.log(i);<br>
+                            i--;<br>
+                            }</p>
+                           <p style="text-align: center; color: black;">Da bi se osigurali da je naša petlja nije beskonačna potrebno je da postoji situacija kada uslov nije
+                            ispunjen. </p>
+                            <p style="text-align: center; color: black;">Svaki put kada se petlja izvrši , i smanjujemo za jedan. Nakon dva što se petlja dva puta izvršila
+                                uslov više nije ispunjen i ne izvršava se dalje. </p><br>
+                    
+                    </div>
+        
+                    <h5 class="h5">Vežba</h5>
+
+                    <div class="tab">
+                        <button class="tablinks" onclick="openCity(event, 'Zadatak 10')">Zadatak 1</button>
+                        <button class="tablinks" onclick="openCity(event, 'Zadatak 11')">Zadatak 2</button>
+                        <button class="tablinks" onclick="openCity(event, 'Zadatak 12')">Zadatak 3</button>
+                        <button class="tablinks" onclick="openCity(event, 'Zadatak 13')">Zadatak 4</button>
+                      </div>
+                    
+                    
+                      <div id="Zadatak 10" class="tabcontent zadatak">
+                        <h3>Zadatak 1</h3>
+                        <p class="centar">Zahtevati od korisnika unos dva broja , zatim ispisati sve brojeve koji se nalaze između ta dva broja.</p><br><br>
+                        <p class="content">let broj1 = prompt("Unesite prvi broj: ");<br>
+                            let broj2 = prompt("Unesite drugi broj: ");<br><br>
+                            
+                            if(broj1 > broj2){<br><br>
+                            
+                                document.write("Prvi broj: " + broj1 + " je veci od drugog broja: " + broj2 + "<br><br>");<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp; while(broj1 > broj2){<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.write(broj2 + "<br>");<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;broj2++;<br>
+                                    }<br><br>
+                            
+                                } else if(broj1 < broj2){<br><br>
+                            
+                                     document.write("Drugi broj: " + broj2 + " je veci od prvog broja: " + broj1 + "<br><br>");<br>
+                                     &nbsp;&nbsp;&nbsp;&nbsp;while(broj1 < broj2);<br>
+                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.write(broj1 + "<br>");<br>
+                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;broj1++;<br>
+                            } else {<br><br>
+                            
+                                &nbsp;&nbsp;&nbsp;&nbsp;document.write("Brojevi su jednaki!");</p><br><br>
+                       
+                      </div>
+                      <div id="Zadatak 11" class="tabcontent zadatak">
+                        <h3>Zadatak 2</h3>
+                        <p class="centar">Zahtevati od korisnika unos broja , zatim ispisati sve brojeve od nule do tog broja.</p><br><br>
+                        <p class="content">let broj = prompt("Unesite broj: ");<br>
+                            let i = 0;<br><br>
+                            
+                            while(i < broj){<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;document.write(i + "<br>");<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;i++;<br>
+                            }</p><br><br>
+                       
+                      </div>
+                      <div id="Zadatak 12" class="tabcontent zadatak">
+                        <h3>Zadatak 3</h3>
+                        <p class="centar">Zahtevati od korisnika unos broja , zatim ispisati sve parne brojeve do tog broja.</p><br><br>
+                        <p class="content">let broj = prompt("Unesite broj: ");<br>
+                            let i;<br><br>
+                            
+                            for (i = 1; i <= broj; i++){<br><br>
+                            
+                                &nbsp;&nbsp;&nbsp;&nbsp;if(i % 2 == 0){<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.write(i + "<br>");<br>
+                            }<br>
+                            }</p><br><br>
+                       
+                      </div>
+
+                      <div id="Zadatak 13" class="tabcontent zadatak">
+                        <h3>Zadatak 4</h3>
+                        <p class="centar">Zahtevati od korisnika unos broja , i zatim izračunati sumu do tog broja.</p><br><br>
+                        <p class="content">let broj = prompt("Unesite broj: ");<br>
+                            let i;<br>
+                            let s = 0;<br><br>
+                            for(i = 0; i <= broj; i++){<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;s = s + i;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.write(s + "<br>");<br>
+                            }</p><br><br>
+                       
+                      </div>
+
+                      <h3 id="do_while">Do while petlja </h3>
+
+                      <div class="teorija">
+                          <p class="prvi">
+                            JavaScript poseduje i "do while" petlju koja nam omogućava da izvršimo neku instrukciju , i da je<br>
+                            ponavljamo sve dok je neki uslov ispunjen.<br><br>
+                            Razlika između while i do while petlje je u tome što će while petlja početi da izvršava neke<br>
+                            instrukcije ako je uslov ispunjen , dok će do while petlja izvršiti instrukciju jednom i ako je uslov<br>
+                            ispunjen nastaviće njeno izvršavanje.</p>
+                          </div>
+                          
+                          <div class="primer">
+                              <p class="centar">Primer:</p>
+                              <p class="drugi">let i = 3;<br><br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;do {<br>
+                                    &nbsp;&nbsp;&nbsp;alert(i);<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;i--;<br>
+                                }<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;while(i>0);</p>
+                                 <p style="text-align: center; color: black;">U primeru iznad ispisaće se 3 , pa će se proveravati uslov i zatim će se ispisati 2 , 1 . </p>
+                                  
+                          
+                          </div>
+              
+                          <h5 class="h5">Vežba</h5>
+
+                          <div class="tab">
+                            <button class="tablinks" onclick="openCity(event, 'Zadatak 14')">Zadatak 1</button>
+                            <button class="tablinks" onclick="openCity(event, 'Zadatak 15')">Zadatak 2</button>
+
+                          </div>
+
+                          <div id="Zadatak 14" class="tabcontent zadatak">
+                            <h3>Zadatak 1</h3>
+                            <p class="centar">Vežba 1</p><br><br>
+                            <p class="content">let i = 10;<br>
+                                let y = 3;<br><br>
+                                
+                                do {<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;document.write(y);<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;y++;<br>
+                                }<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;while( y <= i);</p><br><br>
+                           
+                          </div>
+
+                          <div id="Zadatak 15" class="tabcontent zadatak">
+                            <h3>Zadatak 2</h3>
+                            <p class="centar">Vežba 2</p><br><br>
+                            <p class="content">let k = 10;<br>
+                                let n = 3;<br><br>
+                              
+                              do {<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;document.write("<br></br>" + k + "<br>");<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;k++;<br>
+                              }<br>
+                              &nbsp;&nbsp;&nbsp;&nbsp;while( k <= n);</p><br><br>
+                           
+                          </div>
+
+                          <h3 id="for_petlja">For petlja </h3>
+
+                          <div class="teorija">
+                              <p class="prvi">
+                                For petlja je složenija od while petlje , ali isto tako veoma često primenjivana u programiranju.<br>
+                                Služi za ponavljanje nekih instrukcija onoliko puta koliko je određeno u definisanju for petlje.<br><br>
+                                Sintaksa for petlje:<br><br>
+                                for ( početna promenljiva , uslov , korak promene promenljive){<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;// JavaScript instrukcije koje se izvršavaju<br>
+                                } </p>
+                              </div>
+                              
+                              <div class="primer">
+                                  <p class="centar">Primer:</p>
+                                  <p class="drugi">for ( let i=0 ; i<10 ; i++){<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;console.log("For petlja");<br>
+                                    }
+                                    </p>
+                                     <p style="text-align: center; color: black;">U primeru iznad vidimo for petlju uz pomoć koje će se ispisati deset puta "For Petlja". Iz koraka
+                                        promene vidimo da će se i svaki put uvećati za 1 nakon izvršenja jednog ciklusa petlje. Nakon što
+                                        se promenljiva poveća deset puta i neće biti veće od 10 i završava se izvršavanje petlje.</p>
+                                      
+                              
+                              </div>
+                  
+                              <h5 class="h5">Vežba</h5>
+
+                              <div class="tab">
+                                <button class="tablinks" onclick="openCity(event, 'Zadatak 16')">Zadatak 1</button>
+                                <button class="tablinks" onclick="openCity(event, 'Zadatak 17')">Zadatak 2</button>
+    
+                              </div>
+    
+                              <div id="Zadatak 16" class="tabcontent zadatak">
+                                <h3>Zadatak 1</h3>
+                                <p class="centar">Vežba 1</p><br><br>
+                                <p class="content">for(let i = 1 ; i <= 10 ; i++){<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;document.write(i);<br>
+                                }</p><br><br>
+                               
+                              </div>
+
+                              <div id="Zadatak 17" class="tabcontent zadatak">
+                                <h3>Zadatak 2</h3>
+                                <p class="centar">Vežba 2</p><br><br>
+                                <p class="content">let niz = [12,23,45,25,256,457,47453,3464,3456];<br>
+                                    let duzinaNiza = niz.length;<br><br>
+                                 
+                                    for(let i = 0; i < duzinaNiza; i++){<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;document.write(niz[i]);<br>
+                                    }</p><br><br>
+                               
+                              </div>
+
+                              <h3>Sadržaj</h3>
+<div class="dugmici">
+                              <a class="btn btn-primary" href="#if-naredba" role="button">if naredba</a>
+                              <a class="btn btn-primary" href="#&&_operator" role="button">Operator &&</a>
+                              <a class="btn btn-primary" href="#!_operator" role="button">Operator !</a>
+                              <a class="btn btn-primary" href="#nizovi" role="button">Nizovi</a>
+                              <a class="btn btn-primary" href="#nizovi_index" role="button">Nizovi indexiranje</a>
+                              <a class="btn btn-primary" href="#while_petlja" role="button">While petlja</a>
+                              <a class="btn btn-primary" href="#do_while" role="button">Do while petlja</a>
+                              <a class="btn btn-primary" href="#for_petlja" role="button">For petlja</a>
+</div>
+
+    <br>
+    <script src="script.js"></script>  
+    <br>
+
+        
+    <hr>
+    
+    <p style="text-align: center">&copy;By: Mr.Brabus</p><br>
+    
+
+
+</body>
+</html>
